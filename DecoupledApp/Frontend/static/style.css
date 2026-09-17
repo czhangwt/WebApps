@@ -1,0 +1,26 @@
+h1 {
+    text-align: left;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    border-collapse: collapse;
+}
+
+#result th, #result td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#result th {
+    font-weight: bold;
+}

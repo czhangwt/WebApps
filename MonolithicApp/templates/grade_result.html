@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Checker</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Grades</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Course Name</th>
+                <th>Course Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for grade in grades %}
+            <tr>
+                <td>{{ grade[0] }}</td>
+                <td>{{ grade[1] }}</td>
+                <td>{{ grade[2] }}</td>
+                <td>{{ grade[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
